@@ -79,6 +79,12 @@ textarea {
 .field {
     border: 2px solid var(--color-border);
     border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.field:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: var(--effect-focus);
 }
 
 .choice {
@@ -89,11 +95,12 @@ textarea {
 
 .choice::before {
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     border: 2px solid var(--color-border);
     border-radius: 4px;
-    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center 20px;
 
 }
 
@@ -106,8 +113,38 @@ textarea {
     box-sizing: border-box;
 }
 
+
+
+/* Activate */
 .choice.type_radio::before {
     border-radius: 50%;
+    background-position: center center;
+    background-image: url(images/select.svg);
+    background-size: 0;
+}
+
+.choice.type_radio:has(:checked)::before {
+    background-size: 8px;
+}
+
+
+.choice.type_checkbox::before {
+    background-image: url(images/check.svg);
+
+}
+
+.choice.type_checkbox:has(:checked)::before {
+    background-position: center center;
+}
+
+.choice.type_radio:has(:focus).type_radio {
+    border-color: var(--color-primary);
+    box-shadow: var(--effect-focus);
+}
+
+.choice:has(:focus)::before {
+    border-color: var(--color-primary);
+    box-shadow: var(--effect-focus);
 }
 
 /* Component */
