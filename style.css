@@ -57,6 +57,7 @@ textarea {
     --font-ko: "Noto Sans KR", sans-serif;
 
     --color-primary: #70C994;
+    --color-border: #DDDDDD;
 
     --input-height: 48px;
     --input-fs: 1.4rem;
@@ -66,6 +67,7 @@ textarea {
 
     --font-color-head: #333333;
     --font-color-contents: #666666;
+
 }
 
 /* Typography */
@@ -76,8 +78,37 @@ textarea {
 
 /* Commons */
 .field {
-    border: 2px solid #ddd;
+    border: 2px solid var(--color-border);
     border-radius: 4px;
+}
+
+.choice {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.choice::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--color-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+.type_radio {
+    width: 160px;
+    height: var(--input-height);
+    padding-left: 11px;
+    border-radius: 4px;
+    border: 2px solid var(--color-border);
+    box-sizing: border-box;
+}
+
+.choice.type_radio::before {
+    border-radius: 50%;
 }
 
 /* Component */
@@ -105,4 +136,13 @@ select {
     background-image: url(./images/arrow.svg);
     background-repeat: no-repeat;
     background-position: right 14px center ;
+}
+
+fieldset div {
+    margin-bottom: 30px;
+}
+
+.radio_wrapper {
+    display: flex;
+    gap: 18px;
 }
