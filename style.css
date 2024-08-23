@@ -9,6 +9,12 @@ h1, h2 {
     font-weight: unset;
 }
 
+ul {
+    margin: unset;
+    padding: unset;
+    list-style: none;
+}
+
 fieldset {
     all: unset;
     display: block;
@@ -23,7 +29,7 @@ button {
     display: block;
 }
 
-input[type="text"] {
+select, input[type="text"] {
     display: block;
     width: 100%;
     height: var(--input-height);
@@ -45,16 +51,6 @@ textarea {
     box-sizing: border-box;
 
 }
-
-select {
-    display: block;
-    width: 100%; 
-    height: var(--input-height);
-    line-height: var(--input-height);
-    padding: 0 var(--input-padding);
-}
-
-
 
 /* CSS Variables */
 :root {
@@ -96,10 +92,17 @@ h1 {
     font-weight: bold;
     color: #5F9976;    
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 34px;
 }
 
 h2 {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 12px;
+}
+
+select {
+    background-image: url(./images/arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center ;
 }
