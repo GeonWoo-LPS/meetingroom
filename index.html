@@ -10,7 +10,48 @@
         <div class="l_wrapper">
             <h1>회의실 예약</h1>
             <form action="">
-                <fieldset>기본정보</fieldset>
+                <fieldset>
+                    <label for="">어떤 용도로 이용할 예정이신가요?</label>
+                    <div class="field">
+                        <select name="subject" id="">
+                            <option>디자이너와의 티타임</option>
+                            <option>개발자 회의</option>
+                            <option>사장님과의 연봉협상</option>
+                        </select>
+                    </div>
+
+                    <label for="">회의의 규모는 어떠한가요?</label>
+                    <div>
+                        <label for=""
+                            ><input type="radio" name="size" />2 ~ 8인</label
+                        >
+                        <label for=""
+                            ><input type="radio" name="size" />9 ~ 20인</label
+                        >
+                        <label for=""
+                            ><input type="radio" name="size" />21 ~ 100인</label
+                        >
+                    </div>
+
+                    <label for="">어떤 장비가 필요 하신가요?</label>
+                    <div>
+                        <label for=""
+                            ><input type="checkbox" name="equipment" id="" />빔
+                            프로젝터</label
+                        >
+                        <label for=""
+                            ><input
+                                type="checkbox"
+                                name="equipment"
+                                id=""
+                            />화이트보드</label
+                        >
+                        <label for=""
+                            ><input type="checkbox" name="equipment" id="" />
+                            전동데스크</label
+                        >
+                    </div>
+                </fieldset>
                 <fieldset>사용자 정보</fieldset>
             </form>
         </div>
