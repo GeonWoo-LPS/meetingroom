@@ -3,7 +3,7 @@ body {
     margin: unset;
 }
 
-h1 {
+h1, h2 {
     margin: unset;
     font-size: unset;
     font-weight: unset;
@@ -57,6 +57,9 @@ textarea {
     --input-padding: 14px;
   
     --effect-focus: 0 0 0 4px rgb( 131 208 156 / .25 );
+
+    --font-color-head: #333333;
+    --font-color-contents: #666666;
 }
 
 /* Typography */
