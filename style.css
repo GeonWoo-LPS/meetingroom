@@ -71,3 +71,10 @@ textarea {
     width: 520px;
     margin: 200px auto;
 }
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5F9976;    
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
